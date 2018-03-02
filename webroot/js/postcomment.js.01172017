@@ -1,0 +1,88 @@
+$(document).ready(function () {
+	$('#lastComm').hide();
+	$('#newComm').show();
+	$('#btnlastComms').click(function() {
+    $('#lastComm').toggleClass('open').slideToggle("slow");
+  });
+	$('#btnComms').click(function() {
+    $('#newComm').toggleClass('open').slideToggle("slow");
+	$('#lastComm').hide();
+  });
+  $('.reply-form').click(function() {
+
+  //Select the parent form and submit
+  $(this).closest('form').submit(function(){
+			
+				
+            //serialize form data
+            var formData = $(this).serialize();
+			var formId =  $(this).attr('id');
+            //get form action
+            var formUrl = $(this).attr('action');
+			
+            
+            $.ajax({
+                type: 'POST',
+				datatype: 'json',
+                url: formUrl,
+                data: formData,
+                success: function(data){
+					
+						
+						
+                       $("#"+formId).prepend(data);
+						//$('#comments').load(document.URL + ' #comments');
+	
+
+				},
+                error: function(xhr,textStatus,error){
+                        alert(textStatus);
+                }
+            });	
+                
+            return false;
+        });
+	  
+  });	  
+
+  
+	
+
+			
+			
+		
+			
+			
+			
+        $('#addComm').submit(function(){
+			
+				
+            //serialize form data
+            var formData = $(this).serialize();
+			
+            //get form action
+            var formUrl = $(this).attr('action');
+            
+            $.ajax({
+                type: 'POST',
+				datatype: 'json',
+                url: formUrl,
+                data: formData,
+                success: function(data,textStatus,xhr){
+					
+                        $('#newComm').prepend(data);
+						//$('#comments').load(document.URL + ' #comments');
+						$('html, body').animate({
+        scrollTop: $('#newComm').offset().top - 180
+    }, 'slow');
+
+				},
+                error: function(xhr,textStatus,error){
+                        alert(textStatus);
+                }
+            });	
+                
+            return false;
+        });
+     });
+

@@ -1,0 +1,97 @@
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Overflow</h1>
+					<p>By HTML5 UP</p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly-middle">Proceed as anticipated</a>
+				</footer>
+
+			</section>
+			
+
+			
+<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>This is Overflow</h2>
+				</header>
+				<p>A brand new site template designed by <a href="http://n33.co">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>.<br />
+				It’s fully responsive, built on <strong>skel</strong>, and of course entirely free<br />
+				under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>
+				<footer>
+					<a href="#boxes" class="button style2 scrolly">Act on this message</a>
+				</footer>
+			</section>
+
+
+<section id="boxes">
+<div class="inner">
+<?php foreach ($articles as $article): ?>
+
+<article id=<?=$article->id ?> class="container box style1 right">
+	
+<a href="#" class="image fit"><?php echo $this->Html->image('/img/articles/'.$article->img,array('alt' => 'CakePHP','border' => '10')) ; ?></a>
+    
+	
+	<div class="inner">
+	<p class="ribbon"><?= $article->created->format('d'); ?>
+	<?= $article->created->i18nFormat('MMM'); ?>
+	<?= $article->created->format('Y'); ?>
+	
+	</p>
+
+	<header>
+	<div class="info-bar">
+	<ul>
+	<li class="icon fa-eye"><?=$article->viewcount ?></li>
+
+	<li class="icon fa-comments-o"><?=$article->comm_count ?></li>
+	</ul>
+	</div>
+	
+	<h2><?= $this->Html->link($article->title, ['action' => 'view', $article->id]) ?></h2>
+	</header>
+	<?php
+	$string =($article->body);
+		if (strlen($string) > 200) {
+
+    // truncate string
+    $stringCut = substr($string, 0, 300);
+   
+    // make sure it ends in a word so assassinate doesn't become ass...
+    $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'...'.$this->Html->link(__('ReadMore'), ['action' => 'view', $article->id]); 
+	
+	}
+	 echo $string;
+
+	
+	?>
+	</div>
+	</article>
+	<?php endforeach; ?>
+	
+	</div>
+	<footer>
+	
+  <ul class="paginate">
+  <?= $this->Paginator->numbers(['modulus' => '7']) ?>
+  <ul class="paginate">
+      <?= $this->Paginator->prev('< ' . __('pg_prev')) ?>
+	  <li><?= $this->Paginator->counter('{{page}}/{{pages}}') ?></li>
+           
+         <?= $this->Paginator->next(__('pg_next') . ' >') ?>
+	  
+</ul>   
+ </ul>  
+
+	
+	 </footer>
+	   </section>
+		
+	
+	
+
+
+	

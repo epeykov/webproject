@@ -1,0 +1,41 @@
+{
+    "name": "cakephp/elastic-search",
+    "description": "An Elastic Search datasource and data mapper for CakePHP 3.0",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "elasticsearch"],
+    "homepage": "https://github.com/cakephp/elastic-search",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CakePHP Community",
+            "homepage": "https://github.com/cakephp/elastic-search/graphs/contributors"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/cakephp/elastic-search/issues",
+        "forum": "http://stackoverflow.com/tags/cakephp",
+        "irc": "irc://irc.freenode.org/cakephp",
+        "source": "https://github.com/cakephp/elastic-search"
+    },
+    "require": {
+        "ruflin/elastica": "~2.2",
+        "cakephp/cakephp": "~3.1"
+    },
+    "require-dev": {
+        "cakephp/cakephp-codesniffer": "dev-master",
+        "psr/log": "~1.0",
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cake\\ElasticSearch\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cake\\ElasticSearch\\Test\\": "tests",
+            "TestPlugin\\": "tests/testapp/Plugin/TestPlugin/src",
+            "TestPluginTwo\\": "tests/testapp/Plugin/TestPluginTwo/src"
+        }
+    }
+}

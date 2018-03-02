@@ -1,0 +1,429 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-02-01 15:48+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/ArticlesController.php:122
+#: Controller/CommentsController.php:67;96
+msgid "The comment could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ArticlesController.php:170;224
+msgid "The article has been saved."
+msgstr ""
+
+#: Controller/ArticlesController.php:174;228
+msgid "The article could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ArticlesController.php:253
+msgid "The article has been deleted."
+msgstr ""
+
+#: Controller/ArticlesController.php:255
+msgid "The article could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/CategoriesController.php:58;85
+msgid "The category has been saved."
+msgstr ""
+
+#: Controller/CategoriesController.php:62;89
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CategoriesController.php:109
+msgid "The category has been deleted."
+msgstr ""
+
+#: Controller/CategoriesController.php:111
+msgid "The category could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/CommentsController.php:63;92
+msgid "The comment has been saved."
+msgstr ""
+
+#: Controller/CommentsController.php:117
+msgid "The comment has been deleted."
+msgstr ""
+
+#: Controller/CommentsController.php:119
+msgid "The comment could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:64;90
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:68;94
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:118
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:120
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:151
+msgid "Invalid username or password, try again"
+msgstr ""
+
+#: Controller/UsersController.php:167
+msgid "This is your first login , please fill registration form."
+msgstr ""
+
+#: Controller/UsersController.php:171
+msgid "The user could not be registrated. Please, try again."
+msgstr ""
+
+#: Template/Articles/add.ctp:8
+msgid "Add Article"
+msgstr ""
+
+#: Template/Articles/edit.ctp:10
+#: Template/Articles/index.ctp:54
+msgid "Save Article"
+msgstr ""
+
+#: Template/Articles/index.ctp:53
+msgid "ReadMore"
+msgstr ""
+
+#: Template/Categories/add.ctp:3
+#: Template/Categories/edit.ctp:3
+#: Template/Categories/index.ctp:3;20
+#: Template/Categories/view.ctp:3;61;94
+#: Template/Comments/add.ctp:3
+#: Template/Comments/edit.ctp:3
+#: Template/Comments/index.ctp:3;21
+#: Template/Comments/view.ctp:3
+#: Template/Users/add.ctp:3
+#: Template/Users/edit.ctp:3
+#: Template/Users/index.ctp:3;18
+#: Template/Users/view.ctp:3
+msgid "Actions"
+msgstr ""
+
+#: Template/Categories/add.ctp:4
+#: Template/Categories/edit.ctp:10
+#: Template/Categories/view.ctp:6
+msgid "List Categories"
+msgstr ""
+
+#: Template/Categories/add.ctp:5
+#: Template/Categories/edit.ctp:11
+#: Template/Categories/view.ctp:8
+msgid "List Parent Categories"
+msgstr ""
+
+#: Template/Categories/add.ctp:6
+#: Template/Categories/edit.ctp:12
+#: Template/Categories/view.ctp:9
+msgid "New Parent Category"
+msgstr ""
+
+#: Template/Categories/add.ctp:7
+#: Template/Categories/edit.ctp:13
+#: Template/Categories/index.ctp:5
+#: Template/Categories/view.ctp:10
+#: Template/Comments/add.ctp:5
+#: Template/Comments/edit.ctp:11
+#: Template/Comments/index.ctp:5
+#: Template/Comments/view.ctp:8
+msgid "List Articles"
+msgstr ""
+
+#: Template/Categories/add.ctp:8
+#: Template/Categories/edit.ctp:14
+#: Template/Categories/index.ctp:6
+#: Template/Categories/view.ctp:11
+#: Template/Comments/add.ctp:6
+#: Template/Comments/edit.ctp:12
+#: Template/Comments/index.ctp:6
+#: Template/Comments/view.ctp:9
+msgid "New Article"
+msgstr ""
+
+#: Template/Categories/add.ctp:14
+msgid "Add Category"
+msgstr ""
+
+#: Template/Categories/add.ctp:21
+#: Template/Categories/edit.ctp:27
+#: Template/Comments/add.ctp:22
+#: Template/Comments/edit.ctp:27
+#: Template/Users/add.ctp:21
+#: Template/Users/edit.ctp:24
+msgid "Submit"
+msgstr ""
+
+#: Template/Categories/edit.ctp:5
+#: Template/Categories/index.ctp:35
+#: Template/Categories/view.ctp:74;109
+#: Template/Comments/edit.ctp:5
+#: Template/Comments/index.ctp:35
+#: Template/Users/index.ctp:33
+msgid "Delete"
+msgstr ""
+
+#: Template/Categories/edit.ctp:7
+#: Template/Categories/index.ctp:35
+#: Template/Categories/view.ctp:5;74;109
+#: Template/Comments/edit.ctp:7
+#: Template/Comments/index.ctp:35
+#: Template/Comments/view.ctp:5
+#: Template/Users/index.ctp:33
+#: Template/Users/view.ctp:5
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Categories/edit.ctp:20
+#: Template/Categories/view.ctp:4
+msgid "Edit Category"
+msgstr ""
+
+#: Template/Categories/index.ctp:4
+#: Template/Categories/view.ctp:7
+msgid "New Category"
+msgstr ""
+
+#: Template/Categories/index.ctp:10
+msgid "Categories"
+msgstr ""
+
+#: Template/Categories/index.ctp:33
+#: Template/Categories/view.ctp:72;107
+#: Template/Comments/index.ctp:33
+#: Template/Users/index.ctp:31
+msgid "View"
+msgstr ""
+
+#: Template/Categories/index.ctp:34
+#: Template/Categories/view.ctp:73;108
+#: Template/Comments/index.ctp:34
+#: Template/Users/index.ctp:32
+msgid "Edit"
+msgstr ""
+
+#: Template/Categories/index.ctp:36
+msgid "Move down"
+msgstr ""
+
+#: Template/Categories/index.ctp:36
+msgid "Are you sure you want to move down # {0}?"
+msgstr ""
+
+#: Template/Categories/index.ctp:37
+msgid "Move up"
+msgstr ""
+
+#: Template/Categories/index.ctp:37
+msgid "Are you sure you want to move up # {0}?"
+msgstr ""
+
+#: Template/Categories/index.ctp:46
+#: Template/Comments/index.ctp:43
+#: Template/Users/index.ctp:41
+msgid "previous"
+msgstr ""
+
+#: Template/Categories/index.ctp:48
+#: Template/Comments/index.ctp:45
+#: Template/Users/index.ctp:43
+msgid "next"
+msgstr ""
+
+#: Template/Categories/view.ctp:5
+msgid "Delete Category"
+msgstr ""
+
+#: Template/Categories/view.ctp:18
+msgid "Parent Category"
+msgstr ""
+
+#: Template/Categories/view.ctp:22;90
+msgid "Name"
+msgstr ""
+
+#: Template/Categories/view.ctp:26;91
+msgid "Description"
+msgstr ""
+
+#: Template/Categories/view.ctp:30;55;86
+#: Template/Comments/view.ctp:26
+#: Template/Users/view.ctp:26
+msgid "Id"
+msgstr ""
+
+#: Template/Categories/view.ctp:34;88
+msgid "Lft"
+msgstr ""
+
+#: Template/Categories/view.ctp:38;89
+msgid "Rght"
+msgstr ""
+
+#: Template/Categories/view.ctp:42;59;92
+#: Template/Comments/view.ctp:30
+#: Template/Users/view.ctp:30
+msgid "Created"
+msgstr ""
+
+#: Template/Categories/view.ctp:46;60;93
+#: Template/Comments/view.ctp:34
+#: Template/Users/view.ctp:34
+msgid "Modified"
+msgstr ""
+
+#: Template/Categories/view.ctp:51
+msgid "Related Articles"
+msgstr ""
+
+#: Template/Categories/view.ctp:56
+msgid "Title"
+msgstr ""
+
+#: Template/Categories/view.ctp:57
+#: Template/Comments/view.ctp:39
+msgid "Body"
+msgstr ""
+
+#: Template/Categories/view.ctp:58
+msgid "Category Id"
+msgstr ""
+
+#: Template/Categories/view.ctp:82
+msgid "Related Categories"
+msgstr ""
+
+#: Template/Categories/view.ctp:87
+msgid "Parent Id"
+msgstr ""
+
+#: Template/Comments/add.ctp:4
+#: Template/Comments/edit.ctp:10
+#: Template/Comments/view.ctp:6
+msgid "List Comments"
+msgstr ""
+
+#: Template/Comments/add.ctp:7
+#: Template/Comments/edit.ctp:13
+#: Template/Comments/index.ctp:7
+#: Template/Comments/view.ctp:10
+#: Template/Users/add.ctp:4
+#: Template/Users/edit.ctp:4
+#: Template/Users/view.ctp:6
+msgid "List Users"
+msgstr ""
+
+#: Template/Comments/add.ctp:8
+#: Template/Comments/edit.ctp:14
+#: Template/Comments/index.ctp:8
+#: Template/Comments/view.ctp:11
+#: Template/Users/index.ctp:4
+#: Template/Users/view.ctp:7
+msgid "New User"
+msgstr ""
+
+#: Template/Comments/add.ctp:15
+msgid "Add Comment"
+msgstr ""
+
+#: Template/Comments/edit.ctp:20
+#: Template/Comments/view.ctp:4
+msgid "Edit Comment"
+msgstr ""
+
+#: Template/Comments/index.ctp:4
+#: Template/Comments/view.ctp:7
+msgid "New Comment"
+msgstr ""
+
+#: Template/Comments/index.ctp:12
+msgid "Comments"
+msgstr ""
+
+#: Template/Comments/view.ctp:5
+msgid "Delete Comment"
+msgstr ""
+
+#: Template/Comments/view.ctp:18
+msgid "Article"
+msgstr ""
+
+#: Template/Comments/view.ctp:22
+msgid "User"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Users/add.ctp:10
+#: Template/Users/edit.ctp:10
+msgid "Add User"
+msgstr ""
+
+#: Template/Users/index.ctp:8
+msgid "Users"
+msgstr ""
+
+#: Template/Users/view.ctp:4
+msgid "Edit User"
+msgstr ""
+
+#: Template/Users/view.ctp:5
+msgid "Delete User"
+msgstr ""
+
+#: Template/Users/view.ctp:14
+msgid "Username"
+msgstr ""
+
+#: Template/Users/view.ctp:18
+msgid "Password"
+msgstr ""
+
+#: Template/Users/view.ctp:22
+msgid "Role"
+msgstr ""
+
+#: Template/Users/view.ctp:38
+msgid "FirstName"
+msgstr ""
+
+#: Template/Users/view.ctp:42
+msgid "LastName"
+msgstr ""
+
+#: Template/Users/view.ctp:46
+msgid "Mobile"
+msgstr ""
+
+#: Template/Users/view.ctp:50
+msgid "Active"
+msgstr ""
+
+#: Template/Users/view.ctp:54
+msgid "Auth"
+msgstr ""
+

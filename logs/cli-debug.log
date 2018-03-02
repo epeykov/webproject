@@ -1,0 +1,4 @@
+2016-11-23 23:55:19 Debug: command 'bake' in plugin 'Bake' was not aliased, conflicts with 'Bake'
+2016-11-23 23:55:19 Debug: command 'benchmark' in plugin 'DebugKit' was not aliased, conflicts with 'DebugKit'
+2016-11-23 23:55:19 Debug: command 'whitespace' in plugin 'DebugKit' was not aliased, conflicts with 'DebugKit'
+2016-11-23 23:55:19 Debug: command 'migrations' in plugin 'Migrations' was not aliased, conflicts with 'Migrations'

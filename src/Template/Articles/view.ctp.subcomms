@@ -1,0 +1,120 @@
+<?php echo $this->Html->charset(); ?>
+<article class="container box style3">
+<header>
+<p>Created: <?= $article->created->format(DATE_RFC850) ?></p>
+<h2><?=h($article->title) ?></h2>
+</header>
+
+<section>
+<p><?= $article->body ?></p>
+<?php echo $this->Html->image('/img/articles/'.$article->img,array('alt' => 'CakePHP','padding' => '10','class'=>'image fit')) ; ?>
+<footer>
+<a href="#comments" id='btnComms' class="button style3 scrolly">Last Coments : <?= count($newComments) ?> </a>
+<a href="#addcomment" class="button style3 scrolly">Add Comment </a>
+</footer>					
+			
+</section>
+<section id="allComm" >
+
+<div id="newComm" class="open">
+         
+<? function renderPosts($commArray, $tmpModel){
+        //set return for the first time
+        if(!isset($return)){ $return = ""; }
+
+        
+        //create list
+		if (!empty($commArray)){
+        foreach ($commArray as $comments){
+		$return .='<blockquote>';
+				if (isset($comments->user->username))
+				{
+				
+				$return .='<p><b>By: </b>'.$comments->user->username.' <b>On: </b><i>'.$comments->created.'</i></p>';
+				$return .='<p><?= h($comments->body) ?></p>';
+				
+				}
+				else
+				{
+				$return .='<p><b>By: Guest On: </b><i>'.$comments->created.'</i></p><p>';
+				$return .='<p>'.$comments->body.'</p>';
+				}
+                
+
+                //if post has children, go deeper
+                if(!empty($comments->children)){
+				$return .='<hr />';
+                    $return .= renderPosts($comments->children, $tmpModel);
+					
+                }
+
+            $return .='</blockquote>'; 
+			$return .='<hr />';			
+        }
+		
+		}
+        
+        
+        return $return;
+    } ?>
+         
+
+					<? $tmpModel = $this->Html; // we have to pass html helper inside, I am not sure it this is best way but it works
+    echo renderPosts($newComments, $tmpModel); //finally, we render the $result returned. ?>
+				
+					  <?php if (!empty($lastComments)): ?>
+					  <footer>
+<a href="#comments" id='btnlastComms' class="button style3 scrolly">Older Coments : <?= count($lastComments) ?> </a>
+
+</footer>					
+				<?php endif; ?>
+				
+				</div>
+					  
+					  <div id="lastComm" class="open">
+
+
+					
+					 <?php if (!empty($lastComments)): ?>
+					 <?php foreach ($lastComments as $comments): ?>
+					 <?php if (isset($comments->user->username)): ?>
+					 <p><b>By:</b> <?= $comments->user->username ?>  <b>On:</b> <i><?=$comments->created ?></i></p>
+					 <blockquote><p><?= h($comments->body) ?></p></blockquote>
+					 
+					 <hr />
+					 <?php else: ?>
+					 <p>By: Guest  On: <?=$comments->created ?></p> 
+					 <blockquote><p><?= h($comments->body) ?></p></blockquote>
+					 <hr />
+					 <?php endif; ?>
+					 <?php endforeach; ?>
+					  <?php endif; ?>
+					  </div>
+					  </section>
+					
+					  <section id="addcomment">
+					  	
+					<?= $this->Form->create('Post',['default'=>'false','id'=>'addComm']) ?>
+				      				  
+						
+					  <div class="row">
+							<div class="12u">
+								<textarea type="text" name="body" id="body" value="" placeholder="Enter your comment" ></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<ul class="actions">
+									<li><input type="submit" id="btn_comm" value="Submit" /></li>
+									<li><input type="reset" class="style3" value="Clear Form" /></li>
+								</ul>
+							</div>
+						</div>
+					  
+					 <?= $this->Form->end() ?>
+					
+				</section>
+		
+</article>
+
+

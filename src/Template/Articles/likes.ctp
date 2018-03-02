@@ -1,0 +1,1 @@
+<i class="icon fa-thumbs-up fa-2x"></i><?= $article->likes_count ?>
