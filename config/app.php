@@ -229,9 +229,9 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
-            'username' => 'epeykove_blog',
-            'password' => 'rMCMyciAVG-a',
-            'database' => 'epeykove_cake944',
+            'username' => 'epeykov',
+            'password' => 'pass',
+            'database' => 'epeykov',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
