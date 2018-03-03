@@ -18,7 +18,7 @@
 </div>
 <div class="meta">
 
-<? function renderCat($catArray,$tmpHtml){
+<?php function renderCat($catArray,$tmpHtml){
 		
 		if(!isset($return)){$return="";}
 		foreach ($catArray  as $key => $category){
@@ -47,7 +47,7 @@ return $return;
 }?>
 				
 			<p class="icon fa-calendar"><?php echo $article->created->i18nFormat('d.MMMY') ?></p>
-			<p class="icon fa-tags"><? $tmpHtml = $this->Html;echo renderCat($categories,$tmpHtml); ?></p>
+			<p class="icon fa-tags"><?php $tmpHtml = $this->Html;echo renderCat($categories,$tmpHtml); ?></p>
 			<p class="icon fa-eye"><?=$article->viewcount ?></p> 
 		
 </div>
@@ -81,7 +81,7 @@ return $return;
 <div id="allComm" >
 <div id="newComm" class="open">
 
-<? function renderPosts($commArray, $tmpModel,$tmpForm){
+<?php function renderPosts($commArray, $tmpModel,$tmpForm){
         //set return for the first time
         if(!isset($return)){ $return = ""; }
 		//create list
@@ -155,7 +155,7 @@ $return .='</div>';
     } ?>
          
 
-					<? $tmpModel = $this->Html; // we have to pass html helper inside, I am not sure it this is best way but it works
+					<?php $tmpModel = $this->Html; // we have to pass html helper inside, I am not sure it this is best way but it works
 					 $tmpForm = $this->Form;
     echo renderPosts($newComments, $tmpModel, $tmpForm); //finally, we render the $result returned. ?>
 				
@@ -168,7 +168,7 @@ $return .='</div>';
 			
 					  </div>
 					  <div id="lastComm" class="open">
-<? echo renderPosts($lastComments, $tmpModel, $tmpForm); //finally, we render the $result returned. ?>
+<?php echo renderPosts($lastComments, $tmpModel, $tmpForm); //finally, we render the $result returned. ?>
 </div>
 				
 
