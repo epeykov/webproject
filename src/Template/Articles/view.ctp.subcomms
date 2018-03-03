@@ -18,7 +18,7 @@
 
 <div id="newComm" class="open">
          
-<?php function renderPosts($commArray, $tmpModel){
+<? function renderPosts($commArray, $tmpModel){
         //set return for the first time
         if(!isset($return)){ $return = ""; }
 
@@ -59,7 +59,7 @@
     } ?>
          
 
-					<?php $tmpModel = $this->Html; // we have to pass html helper inside, I am not sure it this is best way but it works
+					<? $tmpModel = $this->Html; // we have to pass html helper inside, I am not sure it this is best way but it works
     echo renderPosts($newComments, $tmpModel); //finally, we render the $result returned. ?>
 				
 					  <?php if (!empty($lastComments)): ?>

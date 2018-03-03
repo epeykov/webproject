@@ -12,7 +12,7 @@
 <div class="info-bar">
 
 		<ul>
-		<?php function renderCat($catArray,$tmpHtml){
+		<? function renderCat($catArray,$tmpHtml){
 		if(!isset($return)){$return="";}
 		foreach ($catArray  as $key => $category){
 		$return .='<div title="Code: 0xe80f" class="the-icons span3"><i class="icon-email"></i> <span class="i-name">icon-email</span><span class="i-code">0xe80f</span></div>';
@@ -30,7 +30,7 @@ return $return;
 }?>
 		
 			<li class="date"><?php echo __('Postedon').$article->created->i18nFormat('d.MMMY') ?></li>
-			<li><?php $tmpHtml = $this->Html; echo __('Postedin').renderCat($categories,$tmpHtml); ?></li>
+			<li><? $tmpHtml = $this->Html; echo __('Postedin').renderCat($categories,$tmpHtml); ?></li>
 			<li class="read-more"><a href="#">Read more</a></li>
 		</ul>
 </div>
@@ -50,7 +50,7 @@ return $return;
 
 <div id="newComm" class="open">
          
-<?php function renderPosts($commArray, $tmpModel,$tmpForm){
+<? function renderPosts($commArray, $tmpModel,$tmpForm){
         //set return for the first time
         if(!isset($return)){ $return = ""; }
 
@@ -118,7 +118,7 @@ $return .='</div>';
     } ?>
          
 
-					<?php $tmpModel = $this->Html; // we have to pass html helper inside, I am not sure it this is best way but it works
+					<? $tmpModel = $this->Html; // we have to pass html helper inside, I am not sure it this is best way but it works
 					 $tmpForm = $this->Form;
     echo renderPosts($newComments, $tmpModel, $tmpForm); //finally, we render the $result returned. ?>
 				
@@ -132,7 +132,7 @@ $return .='</div>';
 				</div>
 					  
 					  <div id="lastComm" class="open">
-<?php echo renderPosts($lastComments, $tmpModel, $tmpForm); //finally, we render the $result returned. ?>
+<? echo renderPosts($lastComments, $tmpModel, $tmpForm); //finally, we render the $result returned. ?>
 </div>
 					  </div>
 					
