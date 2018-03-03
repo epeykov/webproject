@@ -38,7 +38,7 @@
 
 						<!-- Intro -->
 						<section id="intro">
-								<a href="#" class="logo"><img src="/images/logo.png" alt="" /></a>
+								<a href="/" class="logo"><img src="/images/logo.png" alt="" /></a>
 								<header>
 									<h2>Contact<h2>
 									</header>
@@ -47,7 +47,7 @@
 												<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 												<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 												<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+												<li><a href="https://github.com/epeykov/" class="icon fa-github"><span class="label">Github</span></a></li>
 											</ul>
 							</section>
 							
