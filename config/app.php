@@ -9,7 +9,7 @@ return [
      * Development Mode:
      * true: Errors and warnings shown.
      */
-    'debug' => filter_var(env('DEBUG', false), FILTER_VALIDATE_BOOLEAN),
+    'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
 
     /**
      * Configure basic information about the application.
@@ -180,7 +180,7 @@ return [
         'default' => [
             'className' => 'Mail',
             // The following keys are used in SMTP transports
-            'host' => 'localhost',
+            'host' => 'db',
             'port' => 25,
             'timeout' => 30,
             'username' => 'root',
@@ -279,8 +279,8 @@ return [
             'persistent' => false,
             'host' => 'db',
             //'port' => 'non_standard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
+            'username' => 'epeykov',
+            'password' => 'pass',
             'database' => 'test_myapp',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
