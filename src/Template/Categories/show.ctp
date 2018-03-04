@@ -32,7 +32,7 @@ function RecursiveCategories($array,$tmpHtml) {
 			<div id="main">
 			<section>
 		
-		<? $tmpHtml = $this->Html;RecursiveCategories($categories_list,$tmpHtml); ?>	
+		<?php $tmpHtml = $this->Html;RecursiveCategories($categories_list,$tmpHtml); ?>	
 	
 	
 

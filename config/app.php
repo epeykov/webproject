@@ -9,7 +9,7 @@ return [
      * Development Mode:
      * true: Errors and warnings shown.
      */
-    'debug' => filter_var(env('DEBUG', false), FILTER_VALIDATE_BOOLEAN),
+    'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
 
     /**
      * Configure basic information about the application.
@@ -180,7 +180,7 @@ return [
         'default' => [
             'className' => 'Mail',
             // The following keys are used in SMTP transports
-            'host' => 'localhost',
+            'host' => 'db',
             'port' => 25,
             'timeout' => 30,
             'username' => 'root',
@@ -222,16 +222,16 @@ return [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
-            'host' => 'localhost',
+            'host' => 'db',
             /**
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
-            'username' => 'epeykove_blog',
-            'password' => 'rMCMyciAVG-a',
-            'database' => 'epeykove_cake944',
+            'username' => 'epeykov',
+            'password' => 'pass',
+            'database' => 'epeykov',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
@@ -277,10 +277,10 @@ return [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
-            'host' => 'localhost',
+            'host' => 'db',
             //'port' => 'non_standard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
+            'username' => 'epeykov',
+            'password' => 'pass',
             'database' => 'test_myapp',
             'encoding' => 'utf8',
             'timezone' => 'UTC',

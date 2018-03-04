@@ -1,6 +1,6 @@
 <div id="newComm" class="open">
 
-<? function renderPosts($commArray, $tmpModel,$tmpForm){
+<?php function renderPosts($commArray, $tmpModel,$tmpForm){
         //set return for the first time
         if(!isset($return)){ $return = ""; }
 		//create list
@@ -73,7 +73,7 @@ $return .='</div>';
     } ?>
          
 
-					<? $tmpModel = $this->Html; // we have to pass html helper inside, I am not sure it this is best way but it works
+					<?php $tmpModel = $this->Html; // we have to pass html helper inside, I am not sure it this is best way but it works
 					 $tmpForm = $this->Form;
     echo renderPosts($newComments, $tmpModel, $tmpForm); //finally, we render the $result returned. ?>
 				
@@ -86,7 +86,7 @@ $return .='</div>';
 			
 					  </div>
 					  <div id="lastComm" class="open">
-<? echo renderPosts($lastComments, $tmpModel, $tmpForm); //finally, we render the $result returned. ?>
+<?php echo renderPosts($lastComments, $tmpModel, $tmpForm); //finally, we render the $result returned. ?>
 </div>
 				
 
