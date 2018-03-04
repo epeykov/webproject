@@ -40,7 +40,7 @@
 	$string =($article->body);
 	$str="";
 		if (strlen($string) > 400) {
-									$str .='<li><a href="/cake/articles/view/'.$article->id.'" class="button">'.__('ReadMore').'</a></li>';
+									$str .='<li><a href="/articles/view/'.$article->id.'" class="button">'.__('ReadMore').'</a></li>';
 									echo $str;
 									}
 									?>
